@@ -2,6 +2,15 @@
 // that are set in wyrm_core/wy_variables.sass. You'll find wyrm in bower_components if you're looking
 // for a reference.
 
+$nameko-purple:                       rgba(87,62,182,1)
+$nameko-orange:                       rgba(246,145,77,1)
+
+// Links
+$link-color:                          $nameko-orange
+$link-color-visited:                  darken($link-color, 6%)
+$link-color-hover:                    lighten($link-color, 6%)
+$link-color-alt:                      hsl(33, 100%, 51%)
+
 $fa-font-path:                        "~font-awesome/fonts"
 $static-img:                          "../img/"
 
@@ -17,11 +26,11 @@ $text-viewcode-color:                 $green
 $text-codexref-color:                 $text-color
 
 // Definition list colors
-$class-color:                         $blue
+$class-color:                         $nameko-purple
 $method-color:                        $gray
 
 // GUI label color
-$guilabel-color:                      $blue
+$guilabel-color:                      $nameko-purple
 
 // Footer colors
 $footer-color:                        $text-medium
@@ -45,13 +54,14 @@ $menu-link-active:                    $white
 
 // Navigation colors
 $nav-background-color:                $menu-background-color
-$nav-search-background-color:         $blue
+$nav-search-background-color:         $nameko-purple
 $nav-search-color:                    $section-background-color
-$nav-link-color:                      $blue
-$nav-link-color-visited:              $purple
-$nav-link-color-hover:                lighten($nav-link-color, 6%) !default
-$nav-link-color-alt:                  hsl(33, 100%, 51%)
-$nav-caption:                         lighten($blue, 15%)
+// these are ignored:
+// $nav-link-color:                      $blue
+// $nav-link-color-visited:              $purple
+//$nav-link-color-hover:                lighten($nav-link-color, 6%) !default
+// $nav-link-color-alt:                  hsl(33, 100%, 51%)
+$nav-caption:                         lighten($nameko-purple, 15%)
 
 // Sidebar colors
 $sidebar-background-color:            $table-stripe-color
